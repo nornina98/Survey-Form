@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC: SURVEY FORM</title>
+</head>
+<body>
+        <link rel="stylesheet" type="text/css" href="SurveyForm.css">
+    <main>
+        <h1 id="title">Malaysian Developers Survey is Open to Coders</h1>
+        <div id="input-form">
+        <p id="description">What we know about the developers who are writing the script for the future</p>
+            <form id="survey-form">
+                
+                <div id="input-name">
+                    <label id="name-label" for="name">1) * Name: </label>
+                    <input autofocus id="name" type="text" placeholder="Please enter your name" required>    
+                </div>
+            
+                <div id="input-email">
+                    <label id="email-label" for="email">2) * Email: </label>
+                    <input autofocus id="email" type="email" placeholder="Please enter your email" required>
+                </div>
+            
+                <div id="input-work-exp">
+                    <label id="number-label" for="work-exp">3) Working Experience (0 - 60 years): </label>
+                    <input autofocus id="number" type="number" min="0" max="60" placeholder="Year">
+                </div>
+
+                <div id="input-dropdown">
+                    <label id="dropdown-label" for="dropdown">4) Your Developer Career: </label>
+                    <select id="dropdown" name="developer-career">
+                        <option disabled>Select an option</option>
+                        <option value="Full-Stack">Full-Stack Developer</option>
+                        <option value="Back-End">Back-End Developer</option>
+                        <option value="Front-End">Front-End Developer</option>
+                    </select>
+                </div>
+
+                <div id="radio-list">
+                    <div id="input-radio">
+                        <label id="radiobtn-label" for="radio-btn">5) Your Developer Position As:</label>
+                    </div>
+                    <div id="input-list">
+                        <ul style="list-style: none;">
+                            <li>
+                                <input id="radio-btn" type="radio" name="position" value="1">
+                                <label id="radio-label" for="radio-btn">Senior Full-Stack Developer</label>
+                            </li>
+                            <li>
+                                <input id="radio-btn" type="radio" name="position" value="2">
+                                <label id="radio-label" for="radio-btn">Senior Back-End Developer</label>
+                            </li>
+                            <li>
+                                <input id="radio-btn" type="radio" name="position" value="3">
+                                <label id="radio-label" for="radio-btn">Senior Front-End Developer</label>
+                            </li>
+                            <li>
+                                <input id="radio-btn" type="radio" name="position" value="4">
+                                <label id="radio-label" for="radio-btn">Junior Full-Stack Developer</label>
+                            </li>
+                            <li>
+                                <input id="radio-btn" type="radio" name="position" value="5">
+                                <label id="radio-label" for="radio-btn">Junior Back-End Developer</label>
+                            </li>
+                            <li>
+                                <input id="radio-btn" type="radio" name="position" value="6">
+                                <label id="radio-label" for="radio-btn">Junior Front-End Developer</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div >
+
+                <div id="checkoutbox-list">
+                    <div>
+                        <label id="checkbox-label" for="checkbox-btn">6) Your Progamming Languages That You Know:</label>
+                    </div>
+
+                    <div id="input-list">
+                        <ul style="list-style: none;">
+                            <li>
+                                <input id="checkbox-btn" type="checkbox" name="JavaScript" value="JavaScript">
+                                <label id="checkbox-label" for="checkbox-btn">JavaScript</label>
+                            </li>
+                            <li>
+                                <input id="checkbox-btn" type="checkbox" name="Python" value="Python">
+                                <label id="radiobtn-label" for="checkbox-btn">Python</label>
+                            </li>
+                            <li>
+                                <input id="checkbox-btn" type="checkbox" name="Java" value="Java">
+                                <label id="checkbox-label" for="checkbox-btn">Java</label>
+                            </li>
+                            <li>
+                                <input id="checkbox-btn" type="checkbox" name="C++" value="C++">
+                                <label id="checkbox-label" for="checkbox-btn">C++</label>
+                            </li>
+                            <li>
+                                <input id="checkbox-btn" type="checkbox" name="C#" value="C#">
+                                <label id="checkbox-label" for="checkbox-btn">C# / C-Sharp</label>
+                            </li>
+                            <li>
+                                <input id="checkbox-btn" type="checkbox" name="Swift" value="Swift">
+                                <label id="checkbox-label" for="checkbox-btn">Swift</label>
+                            </li>
+                            <li>
+                                <input id="checkbox-btn" type="checkbox" name="PHP" value="PHP">
+                                <label id="checkbox-label" for="checkbox-btn">PHP</label>
+                            </li>
+                            <li>
+                                <input id="checkbox-btn" type="checkbox" name="SQL" value="SQL">
+                                <label id="checkbox-label" for="checkbox-btn">SQL</label>
+                            </li>
+                            <li>
+                                <input id="checkbox-btn" type="checkbox" name="Ruby" value="Ruby">
+                                <label id="checkbox-label" for="checkbox-btn">Ruby</label>
+                            </li>
+                            <li>
+                                <input id="checkbox-btn" type="checkbox" name="Objective-C" value="Objective-C">
+                                <label id="checkbox-label" for="checkbox-btn">Objective-C</label>
+                            </li>
+                            <li>
+                                <input id="checkbox-btn" type="checkbox" name="Other" value="Other">
+                                <label id="checkbox-label" for="checkbox-btn">Other Languages</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="input-textarea">
+                        <div>
+                            <label id="checkbox-label" for="text-area">7) Suggestion And Recommendation For Future IT in Malaysia:</label>
+                        </div>
+                        <div>
+                            <textarea id="text-area" placeholder="Please leave your comments and suggestion" rows="5" cols="50"></textarea>
+                        </div>
+                    </div>
+                   
+                    <div id="btn-submit">
+                        <input id="submit" type="submit" name="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>  
+</body>
+</html>
